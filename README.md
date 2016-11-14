@@ -1,7 +1,7 @@
 [birdy]: imgs/birdy.png "birdy"
 [wireframe]: imgs/wireframe.png "wireframe"
-# FlexBox Birdy
-[!alt text][birdy]
+# FlexBox Birdy ![alt text][birdy]
+
   FlexBox Birdy is a CSS game that draws inspiration from FlexBox Froggy made Thomas Park.
 
   In FlexBox Birdy, birds are lost from their nests and the player needs to help them get back home using their flexbox skills.
@@ -22,7 +22,7 @@ In FlexBox Birdy, users will be able to:
 Game will consist of a single page with a field on the left to input css/flexbox properties with the side of the page displaying the "game". Instructions for each level will be displayed in the top left.
 At the bottom there will be nav links to my Github and LinkedIn.
 
-[!alt text][wireframe]
+![alt text][wireframe]
 
 # Technologies and Architecture
 
