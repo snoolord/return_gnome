@@ -32,8 +32,33 @@ At the bottom there will be nav links to my Github and LinkedIn.
 
 The following design will be used for FlexBox Birdy:
 
-* game.js - will take care of the game logic and load levels
+* game.js - will take care of the game logic and load levels. This will also check the position of the "birdy" elements to see if the level is "complete". Game.js will also handle user input and use .css() or .attr(). User input will be parsed in the text area on left side of the screen.
+
 * levels.js - holds all the information of each game levels & information on how to complete the levels
+```javascript
+levels = [
+  {
+    level: 1,
+    title: "Center",
+    instructions: "Move the birdy back home in the middle of the container",
+    hint: "Use Display Flex To Center",
+    birdies: ['yellow'],
+    solution: {'justify-content: center'}
+  },
+  {
+    level: 2,
+    title: "Space between",
+    instructions: "Move the birds back home at the edges of the container",
+    hint: "Use justify-content space-between",
+    birdies: ['yellow', 'green'],
+    solution: {'justify-content: space-between'}
+  }
+]
+
+On the DOM, there will be three elements:
+* Instructions in the top left
+* Input form in the bottom left
+* Sky class on the right that shows updates to changes.
 
 # Implementation Timeline
 

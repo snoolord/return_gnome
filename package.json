@@ -1,0 +1,27 @@
+{
+  "name": "flexbox_birdy",
+  "version": "1.0.0",
+  "description": "[birdy]: imgs/birdy.png \"birdy\" [wireframe]: imgs/wireframe.png \"wireframe\" # FlexBox Birdy ![alt text][birdy]",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/winstonjz/flexbox_birdy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/winstonjz/flexbox_birdy/issues"
+  },
+  "homepage": "https://github.com/winstonjz/flexbox_birdy#readme",
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "webpack": "^1.13.3"
+  }
+}
