@@ -53,7 +53,8 @@ levels = [
     birdies: ['yellow', 'green'],
     solution: {'justify-content: space-between'}
   }
-]```
+]
+```
 
 On the DOM, there will be three elements:
 * Instructions in the top left
