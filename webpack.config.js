@@ -1,7 +1,7 @@
 module.exports = {
   entry: "./js/flexbox-birdy.js",
   output: {
-    filename: "./bundle.js"
+    filename: "./js/bundle.js"
   },
   devtool: 'source-map',
   resolve: {

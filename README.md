@@ -44,7 +44,7 @@ levels = [
     hint: "Use Display Flex To Center",
     birdies: ['yellow'],
     solution: {'justify-content: center'}
-  },
+  },      
   {
     level: 2,
     title: "Space between",
