@@ -151,7 +151,7 @@ class Game {
     let houseNumber = currentLevel.houses;
     let houses = $('<div class="houses"></div>');
     for (let i =0; i < houseNumber; i++) {
-      let house = $('<img src="../imgs/house.png" class="house"></img>');
+      let house = $('<img src="./imgs/house.png" class="house"></img>');
       houses.append(house);
     }
     let houseStyling = currentLevel.solution;
@@ -162,7 +162,7 @@ class Game {
     $('.game').append(houses);
     let gnomes = currentLevel.gnomes;
     for (let i = 0; i < gnomes.length; i++) {
-      let gnome = $(`<img src="../imgs/${gnomes[i]}" class="gnome"></img>`);
+      let gnome = $(`<img src="./imgs/${gnomes[i]}" class="gnome"></img>`);
       gnome.animateCss('pulse');
       this.el.append(gnome);
     }

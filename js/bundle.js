@@ -72,7 +72,7 @@
 	  return [{
 	    level: 1,
 	    title: "Center",
-	    instructions: "<p>Welcome to Return Gnome, a game where you help Fred the Gnome and his friends find their way home by writing CSS code! Use <code>justify-content</code> property to guide Fred home.</br> Justify-content aligns items horizontally and accepts the following values:</p><ul><li><code>flex-start</code>: Items align to the left side of the container.</li><li><code>flex-end</code>: Items align to the right side of the container.</li><li><code>center</code>: Items align at the center of the container.</li><li><code>space-between</code>: Items display with equal spacing between them.</li><li><code>space-around</code>: Items display with equal spacing around them.</li></ul><p>For example, <code>justify-content: flex-end;</code> will move the Fred to the right.</p>",
+	    instructions: "<p>Welcome to Return Gnome! A fairy has taken control of the forest and keeps moving all the Gnomes' homes, getting them all lost! Help Fred the Gnome and his friends find their way home by writing CSS code! Use <code>justify-content</code> property to guide Fred home.</br> Justify-content aligns items horizontally and accepts the following values:</p><ul><li><code>flex-start</code>: Items align to the left side of the container.</li><li><code>flex-end</code>: Items align to the right side of the container.</li><li><code>center</code>: Items align at the center of the container.</li><li><code>space-between</code>: Items display with equal spacing between them.</li><li><code>space-around</code>: Items display with equal spacing around them.</li></ul><p>For example, <code>justify-content: flex-end;</code> will move the Fred to the right.</p>",
 	    hint: "Use Display Flex to Center",
 	    gnomes: ['gnome.png'],
 	    houses: 1,
@@ -340,7 +340,7 @@
 	      var houseNumber = currentLevel.houses;
 	      var houses = $('<div class="houses"></div>');
 	      for (var i = 0; i < houseNumber; i++) {
-	        var house = $('<img src="../imgs/house.png" class="house"></img>');
+	        var house = $('<img src="./imgs/house.png" class="house"></img>');
 	        houses.append(house);
 	      }
 	      var houseStyling = currentLevel.solution;
@@ -351,7 +351,7 @@
 	      $('.game').append(houses);
 	      var gnomes = currentLevel.gnomes;
 	      for (var _i = 0; _i < gnomes.length; _i++) {
-	        var gnome = $('<img src="../imgs/' + gnomes[_i] + '" class="gnome"></img>');
+	        var gnome = $('<img src="./imgs/' + gnomes[_i] + '" class="gnome"></img>');
 	        gnome.animateCss('pulse');
 	        this.el.append(gnome);
 	      }
