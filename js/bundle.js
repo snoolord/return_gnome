@@ -247,7 +247,6 @@
 	            // on "complete" style flag is triggered to save to answer
 	            if (style[1].includes(';')) {
 	              semicolon = true;
-	              console.log(style[1]);
 	              style[1] = style[1].trim();
 	              style[1] = style[1].slice(0, style[1].length - 1);
 	            }
@@ -265,7 +264,6 @@
 	          if ((0, _isEqual2.default)(answer, _this2.levels[_this2.currentLevel].solution)) {
 	            if (win === 0) {
 	              (function () {
-	                console.log(window.localStorage.completedLevels, "completed levels");
 	                var completedLevels = [];
 	                if (window.localStorage.completedLevels.length > 0) {
 	                  window.localStorage.completedLevels.split('').forEach(function (level) {

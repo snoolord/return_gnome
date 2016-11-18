@@ -62,7 +62,6 @@ class Game {
           // on "complete" style flag is triggered to save to answer
           if (style[1].includes(';')) {
             semicolon = true;
-            console.log(style[1]);
             style[1] = style[1].trim();
             style[1] = style[1].slice(0, style[1].length - 1);
           }
@@ -79,7 +78,6 @@ class Game {
         }
         if (isEqual(answer, this.levels[this.currentLevel].solution)) {
           if ( win === 0 ) {
-            console.log(window.localStorage.completedLevels, "completed levels");
             let completedLevels = [];
             if (window.localStorage.completedLevels.length > 0 ) {
               window.localStorage.completedLevels.split('').forEach((level) => {
