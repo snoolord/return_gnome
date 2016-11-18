@@ -1,18 +1,18 @@
-[birdy]: imgs/birdy.png "birdy"
+[gnome]: imgs/gnome.png "gnome"
 [wireframe]: imgs/wireframe.png "wireframe"
-# FlexBox Birdy ![alt text][birdy]
+# Return Gnome ![alt text][gnome]
 
-  FlexBox Birdy is a CSS game that draws inspiration from FlexBox Froggy made Thomas Park.
+  Return Gnome! is a CSS game that draws inspiration from FlexBox Froggy made Thomas Park.
 
-  In FlexBox Birdy, birds are lost from their nests and the player needs to help them get back home using their flexbox skills.
+  In Return Gnome!, a fairy has taken control of the forest and keeps moving the gnomes' homes to random places. Players needs to help them get back home using their flexbox skills.
 
 # Functionality & MVP
 
-In FlexBox Birdy, users will be able to:
+In Return Gnome!, users will be able to:
 
-* use css to move birds on the screen
+* use css to move gnomes on the screen
 * have different levels
-* descriptions and hints for each level
+* descriptions and instructions for each level
 * levels save using local storage
 
 * production read me
@@ -32,7 +32,7 @@ At the bottom there will be nav links to my Github and LinkedIn.
 
 The following design will be used for FlexBox Birdy:
 
-* game.js - will take care of the game logic and load levels. This will also check the position of the "birdy" elements to see if the level is "complete". Game.js will also handle user input and use .css() or .attr(). User input will be parsed in the text area on left side of the screen.
+* game.js - will take care of the game logic and load levels. This will also check the position of the "gnome" elements to see if the level is "complete". Game.js will also handle user input and use .css() or .attr(). User input will be parsed in the text area on left side of the screen.
 
 * levels.js - holds all the information of each game levels & information on how to complete the levels
 ```javascript
