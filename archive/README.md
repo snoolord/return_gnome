@@ -1,6 +1,6 @@
 [gnome]: imgs/gnome.png "gnome"
 [wireframe]: imgs/wireframe.png "wireframe"
-# Return Gnome <img src="./imgs/gnome.png" alt="Drawing" style="width: 50px;"/>
+# Return Gnome <img src="../imgs/gnome.png" alt="Drawing" style="width: 50px;"/>
 
   Return Gnome! is a CSS game that draws inspiration from FlexBox Froggy made Thomas Park.
 
