@@ -1,8 +1,4 @@
-.forest, .houses {
-  display: flex;
-  position: absolute;
-  width: 90%;
-}
+
 
 .forest {
   z-index: 20;
@@ -17,7 +13,8 @@
 .gnome {
   height: 90px;
   width: 50px;
-  padding: 39px;
+  margin: 0 39px;
+  padding-top: 39px;
   -webkit-animation-duration: 3s;
   -webkit-animation-delay: 0s;
   -webkit-animation-iteration-count: infinite;

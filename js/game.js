@@ -86,8 +86,6 @@ class Game {
                 completedLevels.push(parseInt(level));
               });
             }
-            console.log(completedLevels);
-            console.log(this.currentLevel);
             if (!completedLevels.includes(this.currentLevel)) {
               completedLevels.push(this.currentLevel);
             }
@@ -128,11 +126,17 @@ class Game {
     } else {
       $('.prev-level-button').prop('disabled', false);
     }
+
+    if (this.currentLevel === 9) {
+      $('.next-level-button').prop('disabled', true);
+    } else {
+      $('.next-level-button').prop('disabled', false);
+    }
     window.localStorage.level = this.currentLevel;
     // Removes all styling from previous level for set up
     this.removeStyling();
     $('.instructions').append(currentLevel.instructions);
-    $('.level-text').html(`Level ${this.currentLevel+1} of 5`);
+    $('.level-text').html(`Level ${this.currentLevel+1} of 10`);
     $('.css-style').append(`<textarea rows='${keys(currentLevel.solution).length} cols='80'></textarea>`);
 
     $.fn.extend({
