@@ -3,7 +3,7 @@
   min-width: 300px;
   padding-left: 3%;
   padding-top: 35px; }
-  .sidebar .level-buttons, .sidebar .instructions {
+  .sidebar .instructions {
     width: 93%; }
 
 .css {
@@ -19,12 +19,14 @@
   padding-left: 10px; }
 
 .right-css {
+  width: 85%;
   padding: 10px; }
 
 .css-style {
   padding-left: 10px;
-  width: 240px; }
+  width: 100%; }
   .css-style textarea {
+    font-size: 20px;
     padding: 0;
     width: 100%;
     border: none;
@@ -33,13 +35,19 @@
     overflow: auto;
     background-color: white; }
 
-.after-css .finish-level-button {
-  float: right; }
+.after-css {
+  margin-top: -4px; }
+  .after-css .finish-level-button {
+    float: right;
+    margin-top: 5px;
+    border-radius: 4px; }
+  .after-css .finish-level-button:enabled {
+    background-color: #fdbc4e; }
 
 .line-numbers {
   color: #ccc;
   background-color: rgba(94, 94, 94, 0.3);
-  padding-top: 10px;
+  padding-top: 13px;
   width: 25px;
   height: 240px;
   text-align: right; }
@@ -64,9 +72,6 @@
   -webkit-animation-delay: 0s;
   -webkit-animation-iteration-count: infinite; }
 
-h2 {
-  margin: 0; }
-
 body {
   display: flex;
   min-width: 600px;
@@ -79,8 +84,9 @@ code {
 
 .game {
   box-sizing: border-box;
-  width: 50%;
+  width: 47%;
   height: 75vh;
+  min-width: 550px;
   top: 0;
   left: 0;
   margin-right: -40px;
@@ -89,7 +95,6 @@ code {
   border-bottom-left-radius: 10px;
   background-color: #49ee95;
   display: flex;
-  align-self: flex-end;
   justify-content: center; }
   .game .forest, .game .houses {
     padding: 0 10px;
@@ -98,9 +103,40 @@ code {
     padding: 20px;
     width: 90%; }
 
+.header-level-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 93%; }
+  .header-level-buttons h2 {
+    margin: 0; }
+
+.win-level-div, .win-level-button {
+  z-index: 100;
+  align-self: center; }
+
+.win-level-button {
+  border-radius: 5px;
+  background-color: #fdbc4e; }
+
 .level-buttons {
   display: flex; }
+  .level-buttons .prev-level-button {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 0 10px;
+    padding-left: 10px;
+    border: none; }
+  .level-buttons .next-level-button {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 0 10px;
+    padding-right: 10px;
+    border: none; }
   .level-buttons .level-text {
-    padding: 0 10px; }
+    padding-top: 2px;
+    background-color: #cccccc;
+    top: 10px;
+    padding: 0 5px; }
 
 /*# sourceMappingURL=main.css.map */

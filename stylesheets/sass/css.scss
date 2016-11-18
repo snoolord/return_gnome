@@ -3,7 +3,7 @@
   min-width: 300px;
   padding-left: 3%;
   padding-top: 35px;
-  .level-buttons, .instructions {
+  .instructions {
     width: 93%;
   }
 }
@@ -23,12 +23,14 @@
   padding-left: 10px;
 }
 .right-css {
+  width: 85%;
   padding: 10px;
 }
 .css-style {
   padding-left: 10px;
-  width: 240px;
+  width: 100%;
   textarea {
+    font-size: 20px;
     padding: 0;
     width: 100%;
     border: none;
@@ -40,15 +42,24 @@
 }
 
 .after-css {
+  margin-top: -4px;
   .finish-level-button {
     float: right;
+    margin-top: 5px;
+    border-radius: 4px;
+
+  }
+
+  .finish-level-button:enabled {
+    background-color: rgb(253,188,78);
+
   }
 }
 
 .line-numbers {
   color: #ccc;
   background-color: rgba(94, 94, 94, .3);
-  padding-top: 10px;
+  padding-top: 13px;
   width: 25px;
   height: 240px;
   text-align: right;

@@ -18,6 +18,24 @@ export const levels =  () => {
       gnomes: ['gnome.png', 'gnome-brown.png'],
       houses: 2,
       solution: {'justify-content': 'space-between'}
-    }
+    },
+    {
+      level: 3,
+      title: "Space-around",
+      instructions: "<p>On this level, we will justify-content to help Fred, Dave and Thomas! </br> The following values might be useful:</p><ul><li><code>space-between</code>: Items display with equal spacing between them.</li><li><code>space-around</code>: Items display with equal spacing around them.</li></ul>",
+      hint: "Use justify-content: space-around",
+      gnomes: ['gnome.png', 'gnome-purple.png', 'gnome-brown.png'],
+      houses: 3,
+      solution: {'justify-content': 'space-around'}
+    },
+    {
+      level: 4,
+      title: "Flex-direction",
+      instructions: "<p>A fairy moved Tom, Dave, and Thomas's house on top of each other! We need to use flex-direction to get them back home! </br> <code>flex-direction</code> takes these values:</p><ul><li><code>column</code>: Items display vertically.</li><li><code>column-reverse</code>: Items display vertically in reverse order.</li><li><code>row</code>: Items display horizontally.</li><li><code>row-reverse</code></li></ul>",
+      hint: "Use flex-direction: column",
+      gnomes: ['gnome.png', 'gnome-purple.png', 'gnome-brown.png'],
+      houses: 3,
+      solution: {'flex-direction': 'column'}
+    },
   ];
 };
