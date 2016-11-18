@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # <img src="./imgs/gnome-title.png" alt="Drawing" style="width: 50px;"/>
 
 In Return Gnome!, a fairy has taken control of the forest and keeps moving the gnomes' homes to random places. Players needs to help them get back home using their flexbox skills.
