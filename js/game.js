@@ -6,6 +6,9 @@ class Game {
     this.el = $el;
     this.levels = levels;
     this.currentLevel = 0;
+    if (isNaN(window.localStorage.level)) {
+      window.localStorage.level ="0";
+    }
     if (window.localStorage.level !== "0") {
       this.currentLevel = parseInt(window.localStorage.level);
     }
@@ -129,6 +132,9 @@ class Game {
       $('.next-level-button').prop('disabled', true);
     } else {
       $('.next-level-button').prop('disabled', false);
+    }
+    if (!window.localStorage.completedLevels) {
+      window.localStorage.completedLevels = '';
     }
     window.localStorage.level = this.currentLevel;
     // Removes all styling from previous level for set up
