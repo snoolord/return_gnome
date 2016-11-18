@@ -1,5 +1,5 @@
 module.exports = {
-  entry: "./js/flexbox-birdy.js",
+  entry: "./js/return-gnome.js",
   output: {
     filename: "./js/bundle.js"
   },

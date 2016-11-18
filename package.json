@@ -1,5 +1,5 @@
 {
-  "name": "flexbox_birdy",
+  "name": "return-gnome",
   "version": "1.0.0",
   "description": "[birdy]: imgs/birdy.png \"birdy\" [wireframe]: imgs/wireframe.png \"wireframe\" # FlexBox Birdy ![alt text][birdy]",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/winstonjz/flexbox_birdy.git"
+    "url": "git+https://github.com/winstonjz/return_gnome.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/winstonjz/flexbox_birdy/issues"
+    "url": "https://github.com/winstonjz/return_gnome/issues"
   },
-  "homepage": "https://github.com/winstonjz/flexbox_birdy#readme",
+  "homepage": "https://github.com/winstonjz/return_gnome#readme",
   "dependencies": {
     "animate.css": "^3.5.2",
     "babel-core": "^6.18.2",
