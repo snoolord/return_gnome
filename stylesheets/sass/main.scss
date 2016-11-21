@@ -14,10 +14,16 @@ body {
   background-color: rgb(34,41,55);
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .return-gnome {
   display: flex;
-  min-width: 1300px;
-  max-width: 1300px;
+  min-width: 90%;
+  max-width: 90%;
   margin: 0;
   font-family: sans-serif;
 }
@@ -29,7 +35,6 @@ code {
 .game {
   box-sizing: border-box;
   width: 47%;
-  height: 75vh;
   min-width: 550px;
   top: 0;
   left: 0;
