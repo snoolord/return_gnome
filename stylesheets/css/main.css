@@ -5,7 +5,8 @@
   padding-top: 35px;
   background-color: white;
   border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px; }
+  border-bottom-left-radius: 10px;
+  height: 680px; }
   .sidebar .instructions {
     width: 93%; }
 
@@ -76,6 +77,7 @@ html {
   height: 100%; }
 
 body {
+  font-family: 'Oswald', sans-serif;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -93,14 +95,14 @@ body {
   display: flex;
   min-width: 90%;
   max-width: 90%;
-  margin: 0;
-  font-family: sans-serif; }
+  margin: 0; }
 
 code {
   background-color: #ccc;
   padding: 0.10em; }
 
 .game {
+  box-sizing: border-box;
   width: 47%;
   min-height: 75%;
   min-width: 550px;
@@ -117,7 +119,7 @@ code {
   .game .forest, .game .houses {
     padding: 0 10px;
     display: flex;
-    height: 76%;
+    height: 65vh;
     position: absolute;
     width: 90%; }
 
