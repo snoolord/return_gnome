@@ -117,6 +117,7 @@ class Game {
     this.el.removeAttr( 'style' );
     this.el.empty();
     $('.houses').empty();
+    $('.houses').removeAttr('style');
     $('.instructions').empty();
     $('.css-style').empty();
     $('.win-level-div').remove();
@@ -153,7 +154,8 @@ class Game {
     });
 
     let houseNumber = currentLevel.houses;
-    let houses = $('<div class="houses"></div>');
+    let houses = $('.houses');
+    console.log(houses);
     for (let i =0; i < houseNumber; i++) {
       let house = $('<img src="./imgs/house.png" class="house"></img>');
       houses.append(house);
