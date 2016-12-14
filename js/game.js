@@ -14,7 +14,6 @@ class Game {
     }
     this.setupGame(this.levels[this.currentLevel]);
     this.buttons();
-
   }
 
   enableButton() {
@@ -33,6 +32,9 @@ class Game {
     finishButton.on('click', (e) => {
       e.preventDefault();
       this.currentLevel++;
+      if (this.currentLevel === 10) {
+         this.currentLevel = 0;
+      } 
       this.setupGame(this.levels[this.currentLevel]);
       this.disableButton();
     });
@@ -85,6 +87,9 @@ class Game {
              cssField.keypress((e) => {
                 if (e.which === 13 ) {
                    this.currentLevel++;
+                   if (this.currentLevel === 10) {
+                      this.currentLevel = 0;
+                   }
                    this.setupGame(this.levels[this.currentLevel]);
                 }
              });
@@ -105,6 +110,9 @@ class Game {
             $('.win-level-button').on('click', function(e) {
               e.stopPropagation();
               that.currentLevel++;
+              if (that.currentLevel === 10) {
+                 that.currentLevel = 0;
+              }
               that.setupGame(that.levels[that.currentLevel]);
             });
           }
@@ -133,9 +141,7 @@ class Game {
     $('.win-level-div').remove();
   }
   setupGame(currentLevel) {
-    if (this.currentLevel === 11) {
-      this.currentLevel = 0;
-   }
+   console.log(this.currentLevel);
     if (this.currentLevel === 0) {
       $('.prev-level-button').prop('disabled', true);
     } else {
@@ -168,7 +174,6 @@ class Game {
 
     let houseNumber = currentLevel.houses;
     let houses = $('.houses');
-    console.log(houses);
     for (let i =0; i < houseNumber; i++) {
       let house = $('<img src="./imgs/house.png" class="house"></img>');
       houses.append(house);
