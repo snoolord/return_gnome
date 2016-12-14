@@ -55,6 +55,7 @@ class Game {
     let semicolon = false;
     let win = 0;
     let that = this;
+    cssField.focus();
     cssField.on('keyup', () => {
       answer = {};
       $('.forest').removeAttr( 'style' );
@@ -80,6 +81,15 @@ class Game {
           $('.forest').css(style[0], style[1]);
         }
         if (isEqual(answer, this.levels[this.currentLevel].solution)) {
+          setTimeout(() => {
+             cssField.keypress((e) => {
+                if (e.which === 13 ) {
+                   this.currentLevel++;
+                   this.setupGame(this.levels[this.currentLevel]);
+                }
+             });
+
+          }, 500);
           if ( win === 0 ) {
             let completedLevels = [];
             if (window.localStorage.completedLevels.length > 0 ) {
@@ -123,6 +133,9 @@ class Game {
     $('.win-level-div').remove();
   }
   setupGame(currentLevel) {
+    if (this.currentLevel === 11) {
+      this.currentLevel = 0;
+   }
     if (this.currentLevel === 0) {
       $('.prev-level-button').prop('disabled', true);
     } else {

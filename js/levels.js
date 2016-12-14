@@ -49,7 +49,7 @@ export const levels =  () => {
     {
       level: 6,
       title: "Align-items",
-      instructions: "<p>Use align-items again to get them back home! Align items vertically and accepts the following values:</p><ul><li><code>flex-start</code>: Items align to the top of the container.</li><li><code>flex-end</code>: Items align to the bottom of the container.</li><li><code>center</code>: Items align at the vertical center of the container.</li><li><code>baseline</code>: Items display at the baseline of the container.</li><li><code>stretch</code>: Items are stretched to fit the container.</li></ul>",
+      instructions: "<p>Use align-items again to get them back home! Align items vertically and accepts the following values:</p><ul><li><code>flex-start</code>: Items align to the top of the container.</li><li><code>flex-end</code>: Items align to the bottom of the container.</li><li><code>center</code>: Items align at the vertical center of the container.</li><li><code>stretch</code>: Items are stretched to fit the container.</li></ul>",
       hint: "Use align-items: flex-end",
       gnomes: ['gnome.png', 'gnome-purple.png', 'gnome-brown.png'],
       houses: 3,
